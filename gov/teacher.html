@@ -60,9 +60,9 @@ function MM_popupMsg(msg) { //v1.0
           <th scope="col"><ul class="drop-down-menu"><li>
 		<a href="../shcool.html" target="_self">學校簡介</a>
             <ul>
-                <li><a href="../project.html" target="_self">學制規模</a></li>
-                <li><a href="position.html" target="_self">學校位置</a></li>
-                <li><a href="run.html" target="_self">學校經營</a></li>
+                <li><a href="../school/project.html" target="_self">學制規模</a></li>
+                <li><a href="../school/position.html" target="_self">學校位置</a></li>
+                <li><a href="../school/run.html" target="_self">學校經營</a></li>
             </ul>
               </li></ul></th>
           <th scope="col"><ul class="drop-down-menu"><li>
@@ -77,9 +77,6 @@ function MM_popupMsg(msg) { //v1.0
 	</li></ul></th>
             <th scope="col"><ul class="drop-down-menu"><li>
 			<a href="../teach.html" target="_self">教學單位</a>
-            <ul>
-                <li><a href="../teach/same.html">相關網站</a></li>
-            </ul>
 		</li></ul></th>
           <th scope="col"><ul class="drop-down-menu"><li><a href="../parent.html" target="_self">家長專區</a>
             <ul>
@@ -183,7 +180,7 @@ function MM_popupMsg(msg) { //v1.0
                           <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                     <div class="modal-content">
                                       <div class="modal-header">
-                                        <h5 class="con-title" id="exampleModalLabel">園長</h5>
+                                        <h5 class="con-title" id="exampleModalLabel">報名</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                           <span aria-hidden="true">&times;</span>
                                         </button>
@@ -200,7 +197,7 @@ function MM_popupMsg(msg) { //v1.0
 										  </div>
 											<div class="form-group">
 											<label for="exampleFormControlInput1">聯絡電話</label>
-											<input type="text" maxlength="11" class="form-control" id="exampleFormControlInput4" placeholder="0912345678">
+											<input type="BuyerMobile" maxlength="12" class="form-control" id="exampleFormControlInput4" placeholder="0912345678">
 										  </div>									  
 											 <div class="form-group">
 											<label for="exampleFormControlInput1">連絡住址</label>
@@ -228,7 +225,7 @@ function MM_popupMsg(msg) { //v1.0
 										  <label class="form-check-label" for="inlineRadio2">女生</label>
 										</div>
 										  </div>
-										 <button type="button" class="btn btn-primary" onClick="MM_popupMsg('感謝您的填寫，我們盡快處理。\r')" >送出</button>
+										 <button type="button" class="btn btn-primary" data-dismiss="modal" onClick="MM_popupMsg('感謝您的填寫，我們盡快處理。\r')" >送出</button>
 										</form>
                                       </div>
                                       <div class="modal-footer">
@@ -238,9 +235,8 @@ function MM_popupMsg(msg) { //v1.0
                                   </div>
                         </div>
                        <script type="text/javascript">
-    $(document).ready(function(){
-        $('##exampleModal').modal('show');
-    });
+            $(document).ready(function(){
+        $('##exampleModal').modal('show');});
   </script></th>
                             <th width="15%" align="right" scope="col">2021/03/25</th>
                             <th width="15%" align="right" scope="col">教務處</th>
